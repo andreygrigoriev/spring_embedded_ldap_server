@@ -1,0 +1,76 @@
+dn: dc=testad,dc=local
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: testad
+
+dn: ou=people,dc=testad,dc=local
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+dn: ou=BOps,dc=testad,dc=local
+objectclass: top
+objectclass: organizationalUnit
+ou: BOps
+
+dn: ou=Core,dc=testad,dc=local
+objectclass: top
+objectclass: organizationalUnit
+ou: Core
+
+dn: uid=demo_admin,ou=BOps,dc=testad,dc=local
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: demo_admin
+sn: Admin
+uid: demo_admin
+AccountName: demo_admin
+givenName: Admin
+userPassword: demo_admin
+mail: demo_admin@testad.local
+description: demo_admin
+
+dn: uid=demo_csr,ou=BOps,dc=testad,dc=local
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: demo_csr
+sn: Admin
+uid: demo_csr
+AccountName: demo_csr
+givenName: Csr
+userPassword: demo_csr
+mail: demo_csr@testad.local
+description: demo_csr
+
+dn: uid=CoreRO,ou=Core,dc=testad,dc=local
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: CoreRO
+sn: CoreRO
+uid: CoreRO
+AccountName: CoreRO
+givenName: CoreRO
+userPassword: 654321
+mail: core@testad.local
+description: CoreRO
+
+dn: uid=andrey,ou=people,dc=testad,dc=local
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Andrey Grigoriev
+sn: Grigoriev
+uid: andrey
+AccountName: andrey
+givenName: Grigoriev
+userPassword: 654321
+mail: andrey@testad.local
+description: This is me
