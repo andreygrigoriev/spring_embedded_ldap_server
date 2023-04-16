@@ -1,4 +1,14 @@
-## This example shows how to build a simple ldap server embedded into a spring boot application
+## This example shows how to build a simple LDAP server embedded into a Spring Boot application
+
+Once started, server will be available on port 8389
+
+Credentials that can be used to log in:
+```yaml
+base-dn: dc=testad,dc=local
+credential:
+  username: uid=admin
+  password: secret
+```
 
 ### Useful links
 * [LDAP Wiki](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol)
